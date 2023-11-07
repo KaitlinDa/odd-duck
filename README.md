@@ -6,7 +6,7 @@ Kaitlin Davis|| October 6, 2023
 
 ## Description
 
-This project completes lab 11. 
+This project completes lab 11 and 12.
 
 ## Lighthouse Screenshot
 
