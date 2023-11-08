@@ -31,3 +31,5 @@
     background-color: #ebf3eb;
   }
   
+  #resultsChart {
+    display: none;
