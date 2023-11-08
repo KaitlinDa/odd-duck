@@ -8,7 +8,7 @@ function Product(name, filePath) {
 Product.allProducts = [];
 Product.totalRounds = 25;
 Product.currentRound = 0;
-Product.lastDisplayed = []; // Keep track of the last displayed products
+Product.lastDisplayed = [];
 
 Product.initializeProducts = function(imageList) {
   for (let imageName of imageList) {
@@ -28,7 +28,7 @@ Product.pickThree = function() {
       chosen.push(product);
     }
   }
-  Product.lastDisplayed = [...chosen]; // Update the last displayed products
+  Product.lastDisplayed = [...chosen];
   return chosen;
 };
 
@@ -71,10 +71,9 @@ Product.endVotingSession = function() {
 };
 
 Product.displayResults = function() {
-  // Hide the product section
   document.getElementById('product-section').style.display = 'none';
 
-  // Create and display results in the results section
+
   const resultsSection = document.getElementById('results-section');
   resultsSection.innerHTML = '';
 
@@ -84,7 +83,7 @@ Product.displayResults = function() {
     resultsSection.appendChild(result);
   });
 
-  // Call to display the chart after the results
+
   Product.displayChart();
 };
 
@@ -122,7 +121,6 @@ Product.displayChart = function() {
   });
 };
 
-// Initialize the products and start the first display
 Product.initializeProducts([
   'bag', 'banana', 'bathroom', 'boots', 'breakfast',
   'bubblegum', 'chair', 'cthulhu', 'dog-duck', 'dragon',
