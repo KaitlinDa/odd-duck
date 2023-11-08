@@ -10,4 +10,4 @@ This project completes lab 11 and 12.
 
 ## Lighthouse Screenshot
 
-![lighthouse Screenshot](/images/lighthouse.png)
+![lighthouse Screenshot](lighthousec.png)
